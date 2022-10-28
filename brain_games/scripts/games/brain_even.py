@@ -1,11 +1,10 @@
 from random import randint
 import prompt
+from brain_games.scripts.greeting.welcome_user import welcome_user
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     n = 0
     while n < 3:
