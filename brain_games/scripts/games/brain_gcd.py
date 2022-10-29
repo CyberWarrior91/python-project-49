@@ -17,7 +17,8 @@ def main():
             print('Correct!')
             n += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd(num_1, num_2)}'.")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was\
+              '{gcd(num_1, num_2)}'.")
             break
     if n == 3:
         print(f'Congratulations, {name}!')
