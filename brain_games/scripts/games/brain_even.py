@@ -9,7 +9,7 @@ def main():
     n = 0
     while n < 3:
         num = (randint(1, 99))
-        print(f'Question: {num}' )
+        print(f'Question: {num}')
         answer = prompt.string('Your answer: ')
         if num % 2 == 0 and answer == 'yes' or num % 2 != 0 and answer == 'no':
             print('Correct!')
@@ -26,5 +26,5 @@ def main():
         print(f"Let's try again, {name}!")
 
 
-if __name__ == '__main__':    
+if __name__ == '__main__':
     main()
