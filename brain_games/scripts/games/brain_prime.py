@@ -10,7 +10,7 @@ def main():
     n = 0
     while n < 3:
         rand_num = random.randint(1, 99)
-        print(f'Question: {rand_num}')
+        print(f"Question: {rand_num}")
         answer = prompt.string("Answer: ")
         if sympy.isprime(rand_num) is True and answer == 'yes' or\
            sympy.isprime(rand_num) is False and answer == 'no':
