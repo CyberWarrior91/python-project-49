@@ -18,22 +18,22 @@ def main():
             print('Correct!')
             n += 1
         elif action == "+" and answer != f"{num_1 + num_2}":
-            print(f'"{answer}" is wrong answer ;(.\
-             Correct answer was "{num_1 + num_2}".')
+            print(f"'{answer}' is wrong answer ;(. Correct answer was"
+                  f"'{num_1 + num_2}'.")
             break
         elif action == '-' and answer == f"{num_1 - num_2}":
             print('Correct!')
             n += 1
         elif action == "-" and answer != f"{num_1 - num_2}":
-            print(f'"{answer}" is wrong answer ;(.\
-             Correct answer was "{num_1 - num_2}".')
+            print(f"'{answer}' is wrong answer ;(. Correct answer was "
+                  f"'{num_1 - num_2}'.")
             break
         elif action == '*' and answer == f"{num_1 * num_2}":
             print('Correct!')
             n += 1
         else:
-            print(f'"{answer}" is wrong answer ;(.\
-             Correct answer was "{num_1 * num_2}".')
+            print(f"'{answer}' is wrong answer ;(. Correct answer was "
+                  f"'{num_1 * num_2}'.")
             break
     if n == 3:
         print(f'Congratulations, {name}!')
