@@ -11,7 +11,7 @@ def main():
         action = random.choice('+' '-' '*')
         num_1 = random.randint(1, 99)
         num_2 = random.randint(1, 99)
-        print(f"Question:  {num_1} {action} {num_2}")
+        print(f"Question: {num_1} {action} {num_2}")
         answer = prompt.string("Your answer: ")
         if action == "+" and answer == f"{num_1 + num_2}":
             print('Correct!')
