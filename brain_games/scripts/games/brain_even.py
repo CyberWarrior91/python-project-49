@@ -5,7 +5,7 @@ from brain_games.scripts.greeting.welcome_user import welcome_user
 
 def main():
     name = welcome_user()
-    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     n = 0
     while n < 3:
         num = (randint(1, 99))
