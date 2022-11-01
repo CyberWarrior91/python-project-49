@@ -16,7 +16,7 @@ def isprime(k):
 
 def main():
     name = welcome_user()
-    print("Answer 'yes' if given number is prime. Otherwise answer 'no'.")
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     n = 0
     while n < 3:
         rand_num = random.randint(1, 99)
