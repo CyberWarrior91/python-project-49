@@ -1,7 +1,17 @@
 import random
 import prompt
 from brain_games.scripts.greeting.welcome_user import welcome_user
-import sympy
+
+
+def isprime(k):
+    if k == 2 or k == 3:
+        return True
+    if k % 2 == 0 or k < 2:
+        return False
+    for i in range(3, int(k ** 0.5) + 1, 2):
+        if k % i == 0:
+            return False
+    return True
 
 
 def main():
@@ -12,11 +22,11 @@ def main():
         rand_num = random.randint(1, 99)
         print(f"Question: {rand_num}")
         answer = prompt.string("Answer: ")
-        if sympy.isprime(rand_num) is True and answer == 'yes' or\
-           sympy.isprime(rand_num) is False and answer == 'no':
+        if isprime(rand_num) is True and answer == 'yes' or\
+           isprime(rand_num) is False and answer == 'no':
             print('Correct!')
             n += 1
-        elif sympy.isprime(rand_num) is True and answer != 'yes':
+        elif isprime(rand_num) is True and answer != 'yes':
             print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
             break
         else:
