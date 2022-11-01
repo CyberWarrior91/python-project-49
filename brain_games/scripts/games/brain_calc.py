@@ -3,9 +3,7 @@ import prompt
 from brain_games.scripts.greeting.welcome_user import welcome_user
 
 
-def main():
-    name = welcome_user()
-    print('What is the result of the expression?')
+def right_answer():
     n = 0
     while n < 3:
         action = random.choice('+' '-' '*')
@@ -26,6 +24,13 @@ def main():
             print(f"'{answer}' is wrong answer ;(. Correct answer was "
                   f"'{right_answer}'.")
             break
+    return n
+
+
+def main():
+    name = welcome_user()
+    print('What is the result of the expression?')
+    n = right_answer()
     if n == 3:
         print(f'Congratulations, {name}!')
     else:
