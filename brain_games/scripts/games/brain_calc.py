@@ -11,28 +11,20 @@ def main():
         action = random.choice('+' '-' '*')
         num_1 = random.randint(1, 99)
         num_2 = random.randint(1, 99)
+        if action == '+':
+            right_answer = num_1 + num_2
+        if action == '-':
+            right_answer = num_1 - num_2
+        if action == '*':
+            right_answer = num_1 * num_2
         print(f"Question: {num_1} {action} {num_2}")
         answer = prompt.string("Your answer: ")
-        if action == "+" and answer == f"{num_1 + num_2}":
-            print('Correct!')
-            n += 1
-        elif action == "+" and answer != f"{num_1 + num_2}":
-            print(f"'{answer}' is wrong answer ;(. Correct answer was"
-                  f"'{num_1 + num_2}'.")
-            break
-        elif action == '-' and answer == f"{num_1 - num_2}":
-            print('Correct!')
-            n += 1
-        elif action == "-" and answer != f"{num_1 - num_2}":
-            print(f"'{answer}' is wrong answer ;(. Correct answer was "
-                  f"'{num_1 - num_2}'.")
-            break
-        elif action == '*' and answer == f"{num_1 * num_2}":
+        if f"{answer}" == f"{right_answer}":
             print('Correct!')
             n += 1
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was "
-                  f"'{num_1 * num_2}'.")
+                  f"'{right_answer}'.")
             break
     if n == 3:
         print(f'Congratulations, {name}!')
