@@ -14,9 +14,7 @@ def isprime(k):
     return True
 
 
-def main():
-    name = welcome_user()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+def brain_prime():
     n = 0
     while n < 3:
         rand_num = random.randint(1, 99)
@@ -32,6 +30,13 @@ def main():
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
             break
+    return n
+
+
+def main():
+    name = welcome_user()
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    n = brain_prime()
     if n == 3:
         print(f'Congratulations, {name}!')
     else:
