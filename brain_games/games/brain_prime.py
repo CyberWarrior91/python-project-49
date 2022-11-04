@@ -1,6 +1,6 @@
 import random
 import prompt
-from brain_games.scripts.greeting.welcome_user import welcome_user
+from brain_games.cli import welcome_user
 
 
 def isprime(k):
