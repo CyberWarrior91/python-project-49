@@ -14,7 +14,7 @@ sympy = "^1.11.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-brain-even = "brain_games.games.brain_even:main"
+brain-even = "brain_games.scripts.even:main"
 brain-calc = "brain_games.scripts.calc:main"
 brain-gcd = "brain_games.games.brain_gcd:main"
 brain-progression = "brain_games.games.brain_progression:main"
