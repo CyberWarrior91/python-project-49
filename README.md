@@ -5,6 +5,7 @@
 This is a hexlet project that contains 5 different "brain games".
 
 **Requirements**: 
+
 python = "^3.10"
 prompt = "^0.4.1"
 
