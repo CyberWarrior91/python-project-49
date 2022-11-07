@@ -22,7 +22,7 @@ In Bash put one of the following commands:
 
 brain-even
 
-brain - calc
+brain-calc
 
 brain-gcd
 
