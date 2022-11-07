@@ -6,11 +6,15 @@ authors = ["Vladislav25 <vladkhleborodov@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"},]
 repository = "https://github.com/CyberWarrior91/python-project-49"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Private :: Do Not Upload",
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 prompt = "^0.4.1"
-sympy = "^1.11.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
