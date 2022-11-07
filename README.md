@@ -10,14 +10,20 @@ prompt = "^0.4.1"
 
 How to install
 In Bash put the following command:
- python3 -m pip install --user git+https://github.com/CyberWarrior91/python-project-49.git
+
+python3 -m pip install --user git+https://github.com/CyberWarrior91/python-project-49.git
 
 How to launch a game
 In Bash put one of the following commands:
+
 brain-even
-brain-calc
+
+brain - calc
+
 brain-gcd
+
 brain-progression
+
 brain-prime
 
 Video instructions on how to install and launch each game:
