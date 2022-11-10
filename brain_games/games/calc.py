@@ -1,18 +1,14 @@
 import random
-
+import operator
 
 DESCRIPTION = 'What is the result of the expression?'
 
 
 def get_question_with_answer():
-    action = random.choice('+' '-' '*')
+    operations = (('+', operator.add), ('-', operator.sub), ('*', operator.mul))
+    operator_name, operator_method = random.choice(operations)
     num_1 = random.randint(1, 99)
     num_2 = random.randint(1, 99)
-    if action == '+':
-        right_answer = num_1 + num_2
-    if action == '-':
-        right_answer = num_1 - num_2
-    if action == '*':
-        right_answer = num_1 * num_2
-    question = f"Question: {num_1} {action} {num_2}"
+    question = f"{num_1} {operator_name} {num_2}"
+    right_answer = str(operator_method(num_1, num_2))
     return question, right_answer
